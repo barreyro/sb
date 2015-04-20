@@ -13,11 +13,25 @@
   </head>
 
   <body>
-    <header>
-      <%= render "layouts/navigation" %>
-    </header>
+  <div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+      <a class="hide-for-medium hide-for-large left-off-canvas-toggle ">X</a>
 
-    <%= yield %>
+      <aside class="left-off-canvas-menu">
+        <ul>
+          <li><%= link_to 'home', root_path, :class=>"navhome" %></li>
+          <li><%= link_to 'contact', contacts_path %> </li>
+          <li><%= link_to 'projects', projects_path %> </li>
+        </ul>
+      </aside>
 
+      <row>
+        <div class="hide-for-small medium-1 large-1 columns">
+          <%= render "layouts/navigation" %> </div>
+        <div class="small-12 medium-11 large-11 columns">
+          <%= yield %></div>
+      </row>
+    </div>
+  </div>
   </body>
 </html>
