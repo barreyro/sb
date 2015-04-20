@@ -15,33 +15,95 @@
  *= require foundation_and_overrides
 
  */
+@font-face {
+  font-family: "Nick";
+  src: url('/assets/nick.otf') format("truetype");
+}
+@font-face {
+  font-family: "Anne";
+  src: url('/assets/anders.ttf') format("truetype");
+}
+@font-face {
+  font-family: "Stream";
+  src: url('/assets/stream.ttf') format("truetype");
+}
 
 body{
-  background-color: #4ECDC4;
+  color: white;
+  background: linear-gradient(270deg, #4ECDC4, #53DAD0);
   }
+#homeHead{
+  font-family: "Stream";
+  font-size: 20pt;
+}
+#here{
+  font-family: Anne;
+  font-size: 20pt;
+}
 
 #sidediv{
   min-height: 100vh;
-  background-color: #505D67;
+  background-color: #ffffff;
   max-width: 70px;
   min-width: 70px;
   position: fixed;
   overflow: hidden;
+  border-right: 5pt solid black;
+  border-top: 3pt solid black;
+  border-left: 2pt solid black;
+  border-bottom: 3pt solid black;
 }
 
-#sidelinks{
+a {
+  color:black !important;
+  font-family: Anne;
+  font-size: 2vw;
+}
+
+#sidelinks1{
   word-wrap: break-word;
-  width: 1px;
-  font-size: 15px;
+  width: 1pt;
   text-align: center;
   display: inline-block;
   line-height: 20px;
   text-transform: uppercase;
   min-width: 70px;
-  min-height: 31vh;
-  background-color: #505D67;
-  margin-left: -10px;
-  overflow: hidden;
+  min-height: 10vh;
+  background-color: #ffffff;
+  margin-top: 10px;
+  padding-bottom: 12%;
+  }
+
+#sidelinks2{
+  word-wrap: break-word;
+  width: 1pt;
+  text-align: center;
+  display: inline-block;
+  line-height: 20px;
+  text-transform: uppercase;
+  min-width: 70px;
+  min-height: 45vh;
+  background-color: #ffffff;
+  border-right: 5pt solid black;
+  border-top: 5pt solid black;
+  border-left: 1pt solid black;
+  }
+
+#sidelinks3{
+  word-wrap: break-word;
+  width: 1pt;
+  text-align: center;
+  display: inline-block;
+  line-height: 20px;
+  text-transform: uppercase;
+  min-width: 70px;
+  min-height: 45vh;
+  background-color: #ffffff;
+  border-right: 5pt solid black;
+  border-top: 5pt solid black;
+  border-left: 1pt solid black;
+  border-bottom: 5pt solid black;
+  margin-bottom: -30pt;
   }
 
 #rightbody{
