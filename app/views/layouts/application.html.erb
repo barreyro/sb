@@ -15,9 +15,9 @@
   <body>
   <div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
-      <a class="hide-for-medium hide-for-large left-off-canvas-toggle ">X</a>
+      <a class="hide-for-medium-up left-off-canvas-toggle ">X</a>
 
-      <aside class="left-off-canvas-menu">
+      <aside class="left-off-canvas-menu contain-to-grid sticky">
         <ul>
           <li><%= link_to 'home', root_path, :class=>"navhome" %></li>
           <li><%= link_to 'contact', contacts_path %> </li>
@@ -26,10 +26,12 @@
       </aside>
 
       <row>
-        <div class="hide-for-small medium-1 large-1 columns">
-          <%= render "layouts/navigation" %> </div>
-        <div class="small-12 medium-11 large-11 columns">
-          <%= yield %></div>
+        <div class="hide-for-small medium-1 large-1 columns" id="sidediv">
+          <%= render "layouts/navigation" %>
+        </div>
+        <div class="small-12 medium-11 large-11 columns" id="rightbody">
+          <%= yield %>
+        </div>
       </row>
     </div>
   </div>
