@@ -1,31 +1,35 @@
 <div class="small-12 medium-12 large-12 columns" id="contactHeader">
-  hello!<br>
-  email<br>
-  github<Br>
-  linkedin<br>
+  Let's Collaborate
 </div>
 
-<div id= "contactForm">
+<div class="small-12  medium-12 large-12 columns" id="contactLinks">
+  <%= link_to image_tag("in.png"), "http://www.linkedin.com/in/barreyro" %>
+  <%= link_to image_tag("email.png"), "mailto: stephaniebarreyro@gmail.com" %>
+  <%= link_to image_tag("github.png"), "https://github.com/barreyro" %>
+  <br>
+</div>
+
+<div class="small-12 medium-10 medium-offset-3 large-10 large-offset-3 columns" id="contactsText">
+  Leave a message:
+</div>
   <%= form_for Contact.new do |f| %>
-    <div class="small-10 medium-8 medium-centered large-8 medium-centered columns">
-      <%= f.text_field :name, placeholder: "name" %>
+    <div class="row">
+    <div class="small-10 small-centered medium-6 medium-centered large-6  columns">
+      <%= f.text_field :name, placeholder: "Your name:" %>
     </div>
-    <div class="small-10 medium-8 medium-centered large-8 medium-centered columns">
-      <%= f.text_field :email, placeholder: "email" %>
     </div>
-
-
-
-  <row>
-    <div class="small-10 medium-8 medium-centered large-8 medium-centered columns">
-      <%= f.text_field :comment, placeholder: "message" %>
+    <div class="row">
+    <div class="small-10 small-centered medium-6 medium-centered large-6  columns">
+      <%= f.text_field :email, placeholder: "Your email:" %>
     </div>
-  </row>
-
-  <row>
-    <div class="small-1 small-centered medium-1 medium-centered large-1 large-centered columns">
+    </div>
+    <div class="row">
+    <div class="small-10 small-centered medium-6 medium-centered large-6  columns">
+      <%= f.text_area :comment, placeholder: "Message", :input_html => { :rows => 100 } %>
+    </div>
+    </div>
+  <div class="small-1 small-centered medium-1  large-1 large-centered columns">
       <%= submit_tag 'S E N D', class: "button tiny" %>
-    </div>
-  </row>
+  </div>
   <% end %>
 </div>
