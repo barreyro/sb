@@ -36,7 +36,19 @@ body{
   color: white;
   background: linear-gradient(120deg, #53DAD0, #4ECDC4);
   background-position: fixed !important;
-  }
+}
+
+#rightbody{
+  -webkit-animation: fadein 2000ms ease-out;
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
 #homeHead{
   font-family: "Stream";
   font-size: 20pt;
