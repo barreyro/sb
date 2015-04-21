@@ -215,3 +215,20 @@ h3{
   padding-bottom: 15vh;
   padding-top: 2vh;
 }
+
+#smallX{
+  font-size: 20px;
+}
+
+#smallNavBar{
+  background-color: black;
+  color: black;
+  text-align: center;
+}
+
+#navLinks a{
+  padding-right: 0 !important;
+  font-size: 13pt !important;
+  text-align: center;
+  color: white !important;
+}

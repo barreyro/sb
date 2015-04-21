@@ -13,16 +13,23 @@
   </head>
 
   <body>
-  <div class="off-canvas-wrap" data-offcanvas>
-    <div class="inner-wrap">
-      <a class="hide-for-medium-up left-off-canvas-toggle" id="smallX">X</a>
-      <aside class="left-off-canvas-menu contain-to-grid sticky">
-        <ul>
-          <li><%= link_to 'home', root_path, :class=>"navhome" %></li>
-          <li><%= link_to 'contact', contacts_path %> </li>
-          <li><%= link_to 'projects', projects_path %> </li>
-        </ul>
-      </aside>
+    <div class="hide-for-medium-up">
+      <div class="contain-to-grid sticky">
+      <nav class="top-bar " data-topbar role="navigation" id="smallNavBar">
+        <div class="row">
+          <div class="small-4 columns" id="navLinks">
+            <%=link_to "Contact", contacts_path %>
+          </div>
+          <div class="small-4 columns" id="navLinks">
+            <%=link_to "***", root_path %>
+          </div>
+          <div class="small-4 columns" id="navLinks">
+            <%=link_to "Projects", projects_path %>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </div>
 
       <row>
         <div class="hide-for-small" id="sidediv">
@@ -34,7 +41,6 @@
         </div>
       </row>
 
-    </div>
-  </div>
+
   </body>
 </html>
