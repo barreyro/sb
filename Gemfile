@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 gem 'foundation-rails'
-
+gem 'font-awesome-sass-rails'
 gem "sass", "~> 3.4.0"
 gem "compass", "~> 1.0"
 # Use sqlite3 as the database for Active Record
