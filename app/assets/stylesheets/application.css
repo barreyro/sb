@@ -236,6 +236,7 @@ h3{
   background-color: black;
   color: black;
   text-align: center;
+  background-position: fixed;
 }
 
 #navLinks a{
