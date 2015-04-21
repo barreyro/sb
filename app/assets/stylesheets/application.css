@@ -27,15 +27,19 @@
   font-family: "Stream";
   src: url('/assets/stream.ttf') format("truetype");
 }
-
+@font-face {
+  font-family: "Chelsea";
+  src: url('/assets/chelsea.ttf') format("truetype");
+}
 body{
   color: white;
-  background: linear-gradient(270deg, #4ECDC4, #53DAD0);
+  background: linear-gradient( 120deg, #53DAD0, #4ECDC4);
+  background-position: fixed;
   }
 #homeHead{
   font-family: "Stream";
   font-size: 20pt;
-  color: #95a5a6;
+  color: #000000;
 }
 
 #homeName{
@@ -54,13 +58,13 @@ body{
   min-width: 70px;
   position: fixed;
   overflow: hidden;
+  border-right: 5pt white;
 }
 
 a {
   color:#95a5a6 !important;
   font-family: "Anne";
   font-size: 2vw;
-
   font-weight: 900;
 }
 
@@ -100,12 +104,11 @@ a {
   min-width: 70px;
   min-height: 45vh;
   background-color: white;
-
   }
 
 #rightbody{
-margin-left: 60px;
-padding-right: 60px;
+  margin-left: 60px;
+  padding-right: 60px;
 }
 
 @media only screen and (max-width: 40em) {
@@ -113,18 +116,49 @@ padding-right: 60px;
 padding-right: 0px;}
 }
 
+#smallX{
+  background-color: white;
+}
+
 ul{
   margin-left: 0;
   }
 
-a {
-  color:white;
-  }
-
-.projectsHeader{
-  background-color: #C44D58;
+#projectsHeader{
   font-family: "Anne";
-  min-height: 40vh;
+  font-size: 34pt;
+  min-height: 25vh;
   margin-left: -4pt;
-  padding-right: 40pt;
+  padding-top: 5vh;
+  width: 105%;
+  overflow: visible;
+}
+
+#lotifymetext{
+  padding-left: 3vw;
+  padding-right: 10px !important;
+  overflow: scroll;
+  font-family: "Lexicon" !important;
+}
+
+h3{
+  font-family: "Anne";
+  font-weight: bold;
+  color: #4C4C4C;
+}
+
+#lotifymetext a {
+  font-family: "Lexicon" !important;
+  color: white !important;
+  font-size: 16pt;
+}
+
+#tools{
+  color: #4C4C4C !important;
+  font-size: 12pt !important;
+  font-weight: bold;
+}
+
+#lotifyrow{
+  padding-bottom: 4vh;
 }
