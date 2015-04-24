@@ -16,6 +16,7 @@
  *= require foundation_and_overrides
 
  */
+
 @font-face {
   font-family: "Nick";
   src: url('/assets/nick.otf') format("truetype");
@@ -47,11 +48,9 @@ body{
   to { opacity: 1; }
 }
 
-
-
 #homeHead{
   font-family: "Stream";
-  font-size: 20pt;
+  font-size: 18pt;
   color: #000000;
 }
 
@@ -151,22 +150,35 @@ ul{
   padding-left: 3vw;
   padding-right: 10px !important;
   overflow: scroll;
-  font-family: "Lexicon" !important;
+  font-family:  'Playfair Display', serif !important;
+  font-size: 95%;
 }
 
 h3{
   font-family: "Anne";
   font-weight: bold;
   color: #4C4C4C;
+  font-size: 200%;
 }
 
 #lotifymetext a {
-  font-family: "Georgia" !important;
-  color: white !important;
-  font-size: 16pt;
+  line-height: 1;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #4C4C4C !important;
+  font-size: 12pt;
+  font-weight: bold;
 }
 
+#lotifymetext a:hover {
+  line-height: 1;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black !important;
+  font-size: 13pt;
+}
+#lotifymetext > h3 { display: inline-block; }
+
 #tools{
+  font-family: serif;
   color: #4C4C4C !important;
   font-size: 12pt !important;
   font-weight: bold;
