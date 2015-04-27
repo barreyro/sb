@@ -17,6 +17,10 @@ development: *default
 test: *default
 
 production:
-  <<: *default
+   adapter: postgresql
+   encoding: unicode
+   host: localhost
    database: stefunny_production
+   pool: 5
    username: stefunny
+   password: <%= ENV['STEFUNNY_PASSWORD'] %>
