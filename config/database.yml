@@ -5,9 +5,9 @@
 #   gem 'sqlite3'
 #
 default: &default
-  host: <%= Rails.application.secrets[:database][:host] %>
   adapter: postgresql
   encoding: UTF8
+  host: <%= Rails.application.secrets[:database][:host] %>
   database: <%= Rails.application.secrets[:database][:name] %>
   pool: 10
   reaping_frequency: 30
@@ -23,7 +23,10 @@ development: *default
 test: *default
 
 production:
-  <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
-  pool: <%= ENV["DB_POOL"] || ENV['MAX_THREADS'] || 5 %>pwd
-  secret_key_base: <%= ENV['SECRET_KEY_BASE'] %>
+  database: <%= ENV['DATABASE_URL'] %>
+  encoding: UTF8
+  pool: 10
+  reaping_frequency: 30
+  username: <%= Rails.application.secrets[:database][:username] %>
+  password: <%= ENV['SECRET_KEY_BASE'] %>
+
