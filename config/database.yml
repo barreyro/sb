@@ -20,7 +20,7 @@ production:
    adapter: postgresql
    encoding: unicode
    host: localhost
-   database: stefunny_production
+   database: <%= ENV['STEFUNNY_DB_URL'] %>
    pool: 5
    username: stefunny
    password: <%= ENV['STEFUNNY_PASSWORD'] %>
