@@ -12,10 +12,10 @@
  *
  *= require_tree .
  *= require_self
- *= require _font-awesome
- *= require foundation_and_overrides
-
+ *= require foundation
  */
+
+@import "foundation_and_overrides";
 
 @font-face {
   font-family: "Nick";
