@@ -18,9 +18,8 @@ test: *default
 
 production:
    adapter: postgresql
-   encoding: unicode
    host: localhost
-   database: <%= ENV['STEFUNNY_DB_URL'] %>
+   database: sb_production
    pool: 5
-   username: stefunny
-   password: <%= ENV['STEFUNNY_PASSWORD'] %>
+   username:
+   password:
