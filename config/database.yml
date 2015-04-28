@@ -13,6 +13,5 @@ development: *default
 test: *default
 
 production:
-  <<: *default
   url: <%=ENV['DATABASE_URL'] %>
 
