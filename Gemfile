@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'dotenv-rails', :groups => [:development, :test]
 gem 'puma'
 gem 'rspec-rails', '~> 3.2.1'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 gem 'foundation-rails'
@@ -34,6 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
  # gem 'capistrano-rails', group: :development
+
 
 
 group :development, :test do

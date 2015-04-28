@@ -14,9 +14,5 @@ test: *default
 
 production:
   <<: *default
-   adapter: postgresql
-   host: localhost
-   database: sb_production
-   pool: 5
-   username: stefunny
-   password: 420
+  url: <%=ENV['DATABASE_URL'] %>
+
