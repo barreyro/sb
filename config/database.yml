@@ -13,9 +13,10 @@ development: *default
 test: *default
 
 production:
+  <<: *default
    adapter: postgresql
    host: localhost
    database: sb_production
    pool: 5
-   username:
-   password:
+   username: stefunny
+   password: 420
