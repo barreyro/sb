@@ -1,4 +1,4 @@
-default: &default
+development:
   adapter: postgresql
   encoding: UTF8
   host: localhost
@@ -8,10 +8,18 @@ default: &default
   username: stefunny
   password: 420
 
-development: *default
-
-test: *default
+test:
+  adapter: postgresql
+  encoding: UTF8
+  host: localhost
+  database: sb_development
+  pool: 10
+  reaping_frequency: 30
+  username: stefunny
+  password: 420
 
 production:
   url: <%=ENV['DATABASE_URL'] %>
+  pool: 5
+
 
