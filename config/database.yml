@@ -20,6 +20,5 @@ test:
 
 production:
   url: <%=ENV['DATABASE_URL'] %>
-  pool: 5
-
+  pool: <%= ENV['MAX_THREADS'] %>
 
