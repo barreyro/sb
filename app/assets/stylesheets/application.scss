@@ -146,40 +146,48 @@ ul{
 }
 
 #lotifymetext{
-  padding-left: 3vw;
+  padding-left: 4vw;
   padding-right: 10px !important;
   overflow: scroll;
-  font-family:  'Playfair Display', serif !important;
+  font-family: 'Josefin Sans', sans-serif !important;
   font-size: 95%;
 }
 
 h3{
-  font-family: "Anne";
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   color: #4C4C4C;
   font-size: 200%;
+
 }
 
 #lotifymetext a {
   line-height: 1;
   font-family: 'Josefin Sans', sans-serif;
-  color: #4C4C4C !important;
+  color: black !important;
   font-size: 12pt;
   font-weight: bold;
+
 }
+
 #lotifymetext a:hover {
   line-height: 1;
   font-family: 'Josefin Sans', sans-serif;
   color: black !important;
   font-size: 13pt;
 }
-#lotifymetext > h3 { display: inline-block; }
+#lotifymetext > h3 {
+ font-family: 'Josefin Sans', sans-serif !important;
+ text-transform: uppercase;
+ display: inline-block;
+}
 
 #tools{
-  font-family: serif;
+  font-family: 'Josefin Sans', sans-serif !important;
   color: #4C4C4C !important;
   font-size: 12pt !important;
   font-weight: bold;
+
 }
 #projectsHeader{
   color: #ffffff;
