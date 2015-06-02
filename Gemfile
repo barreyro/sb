@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dotenv-rails'
 gem 'puma'
 gem 'rspec-rails', '~> 3.2.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
