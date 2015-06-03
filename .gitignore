@@ -15,4 +15,6 @@
 /log/*
 !/log/.keep
 /tmp.env
-
+/tmp*
+/tmp/*
+tmp*
